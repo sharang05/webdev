@@ -1,19 +1,35 @@
+<DOCTYPE html>
+
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title>Richa Dwivedi</title>
-		<link rel="stylesheet" href="stylesheet.css">
+<head>
+	<title>My Webpage</title>
 
-	</head>
 
-	<body>
-		<h1>My name is Richa Dwivedi</h1>
+</head>
 
-		<p>Hi! I am Richa Dwivedi. Currently I am living in Hyderabad.</p>
-		<p>My <i>husband</i> name is <b>Golu Molu.</b></p>
+<body>
+	<script type="text/javascript">
+		function light(sw){
+			var pic;
 
-		<img src="flower.jpg" width="400" height="350">
-	</body>
+			if (sw == 0 ){
+				pic = "pic_bulboff.gif"
+			}
+			else{
+				pic = "pic_bulbon.gif"
+			}
+		document.getElementById('myimage').src = pic;
+		}
+	</script>
+
+<img id = "myimage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+	<button type="button" onclick="light(1)">Light ON</button>
+	<button type="button" onclick="light(0)">Light OFF</button>
+</p>
+
+</body>
 
 </html>
