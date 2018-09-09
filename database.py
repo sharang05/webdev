@@ -23,4 +23,6 @@ class Database(object):
 	def find_one(collection, query):
 		Database.DATABASE[collection].find_one(query)
 
+		sssss
+
 
