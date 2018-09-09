@@ -1,5 +1,9 @@
 
 from post import Post
+from database import Database
+
+
+Database.initialize()
 
 post = Post("The nun", "This is recent released hollywood movie", "Not Known")
 
