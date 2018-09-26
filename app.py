@@ -1,11 +1,9 @@
-
-from post import Post
 from database import Database
-
+from menu import Menu
 
 Database.initialize()
 
-post = Post("The nun", "This is recent released hollywood movie", "Not Known")
+menu = Menu()
 
-print("Tilte of Movie is {}".format(post.title))
-print(post.content)
+menu.run_menu()
+
